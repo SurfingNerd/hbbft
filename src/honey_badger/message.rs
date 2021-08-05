@@ -74,4 +74,5 @@ impl<N> Message<N> {
     pub fn epoch(&self) -> u64 {
         self.epoch
     }
+    pub fn content(&self) -> &MessageContent<N> { &self.content }
 }
